@@ -1,0 +1,68 @@
+<html>
+<head>
+<title> </title>
+
+<style>
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.video-wrapper {
+ 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+</style>
+
+<script>
+
+function fun1()
+{
+var fnum=document.getElementById("N1").value;
+var snum=document.getElementById("N2").value;
+
+var total=parseInt(fnum)+parseInt(snum);
+ 
+document.getElementById("result").innerHTML=total;
+}
+</script>
+
+</head>
+<body><font color="white">
+
+<div class="video-wrapper">
+  <video playsinline autoplay muted loop poster="Dark.mp4">
+    <source src="C:\Users\पज\Desktop\Impor\Dark.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="header">
+<h1><font size=30>TECHNICAL ASSESMENT FOR IT-III STUDENTS</font></h1>
+<hr>
+<h1>Addition of Two Numbers</h1>
+Enter First Number:<br> <input id="N1"/> <br><br>
+Enter Second Number:<br> <input id="N2"/> <br><br><br>
+<h2>Result:<h2> <h2 id="result"></h2>
+<button onclick="fun1()">Calculate</button>
+
+  </div>
+</div>
+
+
+</body>
+</html>
